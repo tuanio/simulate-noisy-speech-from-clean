@@ -12,7 +12,7 @@ This repository is a collection of three other repositories with some adjustment
 
 ### Prepare the dataset
 
-If we want to reuse the data preprocessing code from [DOTN](https://github.com/hsinyilin19/Discriminator-Constrained-Optimal-Transport-Network), we need to format the data in the same way as the TIMIT dataset (which can be done easily using `bash` or `python`). Another note is that our prepared data needs to have the same sample rate as the desired training data or configuration (which can be done by resampling using `torchaudio` or `librosa`).
+If we want to reuse the data preprocessing code from [DOTN](https://github.com/tuanio/simulate-noisy-speech-from-clean/tree/main/Discriminator-Constrained-Optimal-Transport-Network), we need to format the data in the same way as the TIMIT dataset (which can be done easily using `bash` or `python`). Another note is that our prepared data needs to have the same sample rate as the desired training data or configuration (which can be done by resampling using `torchaudio` or `librosa`).
 
 In the directory `Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT`, there are two bash scripts used to create data for the following two cases:
 
