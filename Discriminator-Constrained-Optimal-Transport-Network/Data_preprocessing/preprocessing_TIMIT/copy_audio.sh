@@ -1,0 +1,4 @@
+python python_copy_audio.py CoreTestList.txt target_CoreTestList.txt
+python python_copy_audio.py CoreTrainList.txt target_CoreTrainList.txt
+python python_copy_audio.py noisy_CoreTestList.txt noisy_target_CoreTestList.txt
+python python_copy_audio.py noisy_CoreTrainList.txt noisy_target_CoreTrainList.txt
