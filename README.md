@@ -5,7 +5,7 @@
 This repository is a collection of three other repositories with some adjustments:
 
 - [drowe67/codec2](https://github.com/drowe67/codec2): Used to simulate codec distortion dataset.
-- [hsinyilin19/Discriminator-Constrained-Optimal-Transport-Network](https://github.com/hsinyilin19/Discriminator-Constrained-Optimal-Transport-Network): Used to replicate noise to TIMIT dataset.
+- [hsinyilin19/Discriminator-Constrained-Optimal-Transport-Network](https://github.com/hsinyilin19/Discriminator-Constrained-Optimal-Transport-Network): Used to add noise to TIMIT dataset.
 - [leandermaben/GANSpeechAugment](https://github.com/leandermaben/GANSpeechAugment/): Used for experiments with four GAN models: `SpeechAttentionGAN`, `SimuGAN`, `MaskCycleGAN-Augment`, `Speech2Speech-Augment`.
 
 ## Steps to run
