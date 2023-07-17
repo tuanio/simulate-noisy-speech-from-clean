@@ -36,7 +36,7 @@ These files contain scripts for data creation, model training, testing, and calc
 
 ## Replicate results
 
-The same configuration as the repository was used, with only the batch size changed for faster training, and both models were trained for 300 epochs.
+The same configuration as the repository was used, with only the batch size changed for faster training, and both models were trained for 300 epochs (150 epochs for lr warm-up, 150 epochs for lr decay).
 
 Lower is better ⬇
 
