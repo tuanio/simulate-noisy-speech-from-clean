@@ -16,10 +16,10 @@ If we want to reuse the data preprocessing code from [DOTN](https://github.com/h
 
 In the directory `Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT`, there are two bash scripts used to create data for the following two cases:
 
-1. When we already have `clean` and `noisy` data (for example, when creating codec distortion data using [codec2](codec2), the script [codec2\build_linux\gen_bitrate_wav.sh](codec2\build_linux\gen_bitrate_wav.sh) is used). Use the bash file [create_codec_timit_format_8000.sh](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\create_codec_timit_format_8000.sh) to create clean data and move the corresponding noisy data to the same location, as well as resample them to the desired sample rate.
-2. When we only have `clean` data and some noisy audio files, such as the helicopter audio at [Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\noise_types\nonstationary\helicopter.wav](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\noise_types\nonstationary\helicopter.wav) or the cabin audio at [Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\noise_types\stationary\cabin.wav](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\noise_types\stationary\cabin.wav). We will use these files to add noise and simulate noisy data from clean speech data (in the same format as TIMIT) with different SNR ratios (customizable in the file [Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\step2_add_noise.py](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\step2_add_noise.py)).
+1. When we already have `clean` and `noisy` data (for example, when creating codec distortion data using [codec2](codec2), the script [gen_bitrate_wav.sh](codec2\build_linux\gen_bitrate_wav.sh) is used). Use the bash file [create_codec_timit_format_8000.sh](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\create_codec_timit_format_8000.sh) to create clean data and move the corresponding noisy data to the same location, as well as resample them to the desired sample rate.
+2. When we only have `clean` data and some noisy audio files, such as the helicopter audio at [helicopter.wav](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\noise_types\nonstationary\helicopter.wav) or the cabin audio at [cabin.wav](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\noise_types\stationary\cabin.wav). We will use these files to add noise and simulate noisy data from clean speech data (in the same format as TIMIT) with different SNR ratios (customizable in the file [step2_add_noise.py](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\step2_add_noise.py)).
 
-Please refer to the two files [create_codec_timit_format_8000.sh](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\create_codec_timit_format_8000.sh) and [create_timit_8000.sh](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\create_timit_8000.sh) for more information.
+Please refer to the two files [create_codec_timit_format_8000.sh](create_codec_timit_format_8000.sh) and [create_timit_8000.sh](Discriminator-Constrained-Optimal-Transport-Network\Data_preprocessing\preprocessing_TIMIT\create_timit_8000.sh) for more information.
 
 After preparing the data, we will have directories containing the desired data in the format required by the [leandermaben/GANSpeechAugment](https://github.com/leandermaben/GANSpeechAugment/) repository, which can be used for training. The advantage of non-parallel dataset GAN models is that they require very little data but still generate good data, typically around 3 minutes of data.
 
@@ -29,8 +29,8 @@ Two models currently have scripts for experimentation: `SpeechAttentionGAN` and 
 
 The scripts for experimentation are:
 
-- `SpeechAttentionGAN`: [GANSpeechAugment\SpeechAttentionGAN\experiment_speech_attention_gan.sh](GANSpeechAugment\SpeechAttentionGAN\experiment_speech_attention_gan.sh).
-- `SimuGAN`: [GANSpeechAugment\SimuGAN\experiment_simu_gan.sh](GANSpeechAugment\SimuGAN\experiment_simu_gan.sh).
+- `SpeechAttentionGAN`: [experiment_speech_attention_gan.sh](GANSpeechAugment\SpeechAttentionGAN\experiment_speech_attention_gan.sh).
+- `SimuGAN`: [experiment_simu_gan.sh](GANSpeechAugment\SimuGAN\experiment_simu_gan.sh).
 
 These files contain scripts for data creation, model training, testing, and calculating metrics (LSD and MSSL).
 
