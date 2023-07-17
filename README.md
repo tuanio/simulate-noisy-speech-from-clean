@@ -42,7 +42,7 @@ The same configuration as the repository was used, with only the batch size chan
 
 ## Listening examples 🎧
 
-You can refer to folder [listening_examples/] for listening to clean, actual noisy and synthesized noisy from models.
+You can refer to folder `listening_examples/` for listening to clean, actual noisy and synthesized noisy from models.
 
 ## Acknowledgement
 
