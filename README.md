@@ -38,6 +38,8 @@ These files contain scripts for data creation, model training, testing, and calc
 
 The same configuration as the repository was used, with only the batch size changed for faster training, and both models were trained for 300 epochs.
 
+Lower is better ⬇
+
 ![alt text](assets/simulate_results.png)
 
 ## Listening examples 🎧
