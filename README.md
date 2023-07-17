@@ -23,7 +23,7 @@ Please refer to the two files `create_codec_timit_format_8000.sh` and `create_ti
 
 After preparing the data, we will have directories containing the desired data in the format required by the [leandermaben/GANSpeechAugment](https://github.com/leandermaben/GANSpeechAugment/) repository, which can be used for training. The advantage of non-parallel dataset GAN models is that they require very little data but still generate good data, typically around 3 minutes of data.
 
-### Run the experiments
+### Run the experiments 💨
 
 Two models currently have scripts for experimentation: `SpeechAttentionGAN` and `SimuGAN`, which are reported to have the best results in the paper.
 
@@ -34,13 +34,13 @@ The scripts for experimentation are:
 
 These files contain scripts for data creation, model training, testing, and calculating metrics (LSD and MSSL).
 
-## Replicate results
+## Replicate results 
 
 The same configuration as the repository was used, with only the batch size changed for faster training, and both models were trained for 300 epochs.
 
 ![alt text](assets/simulate_results.png)
 
-## Listening examples
+## Listening examples 🎧
 
 You can refer to folder [listening_examples](listening_examples) for listening to clean, actual noisy and synthesized noisy from models.
 
