@@ -40,6 +40,10 @@ The same configuration as the repository was used, with only the batch size chan
 
 ![alt text](assets/simulate_results.png)
 
+## Listening examples
+
+You can refer to folder [listening_examples](listening_examples) for listening to clean, actual noisy and synthesized noisy from models.
+
 ## Acknowledgement
 
 This work was done under [I2R, A*Star](https://www.a-star.edu.sg/i2r)
