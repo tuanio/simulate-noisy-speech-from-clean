@@ -48,4 +48,4 @@ You can refer to folder `listening_examples/` for listening to clean, actual noi
 
 ## Acknowledgement
 
-This work was done under [I2R, A*Star](https://www.a-star.edu.sg/i2r)
+This work was done under [I²R, A*Star](https://www.a-star.edu.sg/i2r)
